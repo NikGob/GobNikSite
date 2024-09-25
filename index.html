@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NikGob</title>
+    <link rel="icon" href="https://i.imgur.com/3X7rDfE.png" type="image/x-icon">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #141D15;
+            color: #c9d1d9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow-x: hidden;
+        }
+        .container {
+            max-width: 100%;
+            max-height: 100%;
+            padding: 40px;
+            background-color: #1E2C20;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            width: 500px;
+        }
+        .avatar {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            border: 3px solid #c9d1d9;
+        }
+        video {
+            width: 100px; /* Установите ширину, как нужно */
+            height: 100px; /* Установите высоту, как нужно */
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+        h1 {
+            font-size: 2em;
+            margin: 0 0 10px;
+        }
+        p {
+            font-size: 1em;
+            margin: 10px 0 30px;
+            color: #8b949e;
+        }
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            align-items: center;
+        }
+        .button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 12px 15px;
+            background-color: #21262d;
+            border-radius: 8px;
+            text-decoration: none;
+            color: #c9d1d9;
+            font-size: 1em;
+            transition: background-color 0.3s ease;
+        }
+        .button:hover {
+            background-color: #30363d;
+        }
+        .button .icon {
+            margin-right: 6px;
+            font-size: 1.3em;
+        }
+
+        @media (min-width: 600px) {
+            .container {
+                max-width: 600px;
+            }
+            .avatar {
+                width: 150px;
+                height: 150px;
+            }
+            h1 {
+                font-size: 2.5em;
+            }
+            p {
+                font-size: 1.2em;
+            }
+            .links {
+                flex-direction: row;
+                gap: 20px;
+                justify-content: center;
+            }
+            .button {
+                padding: 15px 20px;
+                font-size: 1.2em;
+            }
+            .button .icon {
+                font-size: 1.5em;
+            }
+        }
+        footer {
+            position: fixed;
+            bottom: 0;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+<div class="container">
+    <video src="PUTIN.mp4" alt="Avatar" class="avatar" autoplay loop muted></video>
+    <h1>NikGob</h1>
+    <p>Hi, I`m GobNik. I learn on back-end developer.<br> This site with link`s for my SM.</p>
+    <div class="links">
+        <a href="https://github.com/gobnik85476" target="_blank" class="button">
+            <i class="fa-brands fa-github icon" style="color: #ADADAD"></i> GitHub
+        </a>
+        <a href="https://t.me/Gobnik1250" target="_blank" class="button">
+            <i class="fa-brands fa-telegram icon" style="color: #ADADAD"></i> Telegram
+        </a>
+        <a href="https://discord.com/users/931851054507774002" target="_blank" class="button">
+            <i class="fab fa-discord" style="font-size: 25px; color: #ADADAD; margin-right: 5px"></i>  Discord
+        </a>
+    </div>
+</div>
+<footer>
+    <p>© 2024 NikGob. All rights reserved.</p>
+</footer>
+</body>
+</html>
